@@ -2,7 +2,7 @@
 # The filesystem that contains the filesystem checker binary (typically /system) cannot
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
-/dev/block/bootdevice/by-name/userdata     /data        ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,discard,errors=panic wait,check,formattable,forceencrypt=footer,length=-32768
+/dev/block/bootdevice/by-name/userdata     /data        ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic wait,check,formattable,forceencrypt=footer,length=-32768
 /dev/block/bootdevice/by-name/cache        /cache       ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic wait,check,formattable
 
 /dev/block/bootdevice/by-name/misc         /misc        emmc         defaults                                                      defaults
@@ -11,9 +11,9 @@
 /dev/block/bootdevice/by-name/dsp          /vendor/dsp               ext4   ro,nosuid,nodev,barrier=1                        wait
 /dev/block/bootdevice/by-name/persist      /mnt/vendor/persist       ext4   noatime,nosuid,nodev,barrier=1                   wait,check,notrim
 
-/dev/block/bootdevice/by-name/appslog      /mnt/rca                  ext4   nosuid,nodev,noatime,noexec,barrier=1,discard    wait,check,formattable,notrim
-/dev/block/bootdevice/by-name/diag         /mnt/idd                  ext4   nosuid,nodev,noatime,noexec,barrier=1,discard    wait,check,formattable,notrim
-/dev/block/bootdevice/by-name/Qnovo        /mnt/qns                  ext4   nosuid,nodev,noatime,noexec,barrier=1,discard    wait,check,formattable,notrim
+/dev/block/bootdevice/by-name/appslog      /mnt/rca                  ext4   nosuid,nodev,noatime,noexec,barrier=1            wait,check,formattable,notrim
+/dev/block/bootdevice/by-name/diag         /mnt/idd                  ext4   nosuid,nodev,noatime,noexec,barrier=1            wait,check,formattable,notrim
+/dev/block/bootdevice/by-name/Qnovo        /mnt/qns                  ext4   nosuid,nodev,noatime,noexec,barrier=1            wait,check,formattable,notrim
 
 /dev/block/bootdevice/by-name/modemst1     /boot/modem_fs1    emmc    defaults                                                defaults
 /dev/block/bootdevice/by-name/modemst2     /boot/modem_fs2    emmc    defaults                                                defaults
