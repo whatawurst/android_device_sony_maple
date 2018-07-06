@@ -84,8 +84,8 @@
         <usecase name="USECASE_AUDIO_RECORD_MMAP" type="in" id="33" />
     </pcm_ids>
     <config_params>
-        <param key="spkr_1_tz_name" value="wsatz.13"/>
-        <param key="spkr_2_tz_name" value="wsatz.14"/>
+        <param key="spkr_1_tz_name" value="wsatz.11"/>
+        <param key="spkr_2_tz_name" value="wsatz.12"/>
         <!-- In the below value string, the value indicates default mono -->
         <!-- speaker. It can be set to either left or right              -->
         <param key="mono_speaker" value="right"/>
@@ -462,4 +462,3 @@
         </input_snd_device>
     </snd_devices>
 </audio_platform_info>
-

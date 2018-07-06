@@ -2181,12 +2181,12 @@
 
     <!-- Gain offset target for dmic1 unit calibration -->
     <path name="dmic1-adj-gain">
-        <ctl name="DEC7 Volume" value="94" />
+        <ctl name="DEC7 Volume" value="104" />
     </path>
 
     <!-- Gain offset target for dmic2 unit calibration -->
     <path name="dmic2-adj-gain">
-        <ctl name="DEC8 Volume" value="94" />
+        <ctl name="DEC8 Volume" value="84" />
     </path>
 
     <!-- For Tasha, DMIC numbered from 0 to 5 -->
@@ -2255,6 +2255,8 @@
         <ctl name="SLIM_0_RX Channels" value="Two" />
         <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
         <ctl name="RX INT8_1 MIX1 INP0" value="RX1" />
+        <ctl name="RX7 Digital Volume" value="82" />
+        <ctl name="RX8 Digital Volume" value="82" />
         <ctl name="SpkrLeft COMP Switch" value="1" />
         <ctl name="SpkrRight COMP Switch" value="1" />
         <ctl name="SpkrLeft BOOST Switch" value="1" />
@@ -2305,7 +2307,7 @@
         <ctl name="SLIM RX1 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
         <ctl name="RX INT8_1 MIX1 INP0" value="RX1" />
-        <ctl name="RX8 Digital Volume" value="84" />
+        <ctl name="RX8 Digital Volume" value="82" />
         <ctl name="SpkrRight COMP Switch" value="1" />
         <ctl name="SpkrRight BOOST Switch" value="1" />
         <ctl name="SpkrRight VISENSE Switch" value="1" />
@@ -2521,7 +2523,7 @@
         <path name="sidetone-iir" />
         <!-- 33 % of 124 (range 0 - 124) Register: 0x340 -->
         <ctl name="IIR0 INP0 Volume" value="41" />
-        <ctl name="RX INT7 MIX2 INP" value="ZERO" />
+        <ctl name="RX INT0 MIX2 INP" value="ZERO" />
     </path>
 
     <path name="speaker-mic">
@@ -2556,26 +2558,26 @@
 
     <path name="stereo-mic">
         <path name="stereo-mic-common" />
-        <ctl name="DEC8 Volume" value="92" />
-        <ctl name="DEC7 Volume" value="92" />
+        <ctl name="DEC8 Volume" value="101" />
+        <ctl name="DEC7 Volume" value="83" />
     </path>
 
     <path name="stereo-mic-gain-low">
         <path name="stereo-mic-common" />
-        <ctl name="DEC8 Volume" value="92" />
-        <ctl name="DEC7 Volume" value="92" />
+        <ctl name="DEC8 Volume" value="101" />
+        <ctl name="DEC7 Volume" value="83" />
     </path>
 
     <path name="stereo-mic-gain-mid">
         <path name="stereo-mic-common" />
-        <ctl name="DEC8 Volume" value="105" />
-        <ctl name="DEC7 Volume" value="105" />
+        <ctl name="DEC8 Volume" value="114" />
+        <ctl name="DEC7 Volume" value="96" />
     </path>
 
     <path name="stereo-mic-gain-high">
         <path name="stereo-mic-common" />
-        <ctl name="DEC8 Volume" value="114" />
-        <ctl name="DEC7 Volume" value="114" />
+        <ctl name="DEC8 Volume" value="123" />
+        <ctl name="DEC7 Volume" value="105" />
     </path>
 
     <path name="speaker-mono-mic-common">
@@ -2585,22 +2587,22 @@
 
     <path name="speaker-mono-mic">
         <path name="speaker-mono-mic-common" />
-        <ctl name="DEC7 Volume" value="92" />
+        <ctl name="DEC7 Volume" value="101" />
     </path>
 
    <path name="speaker-mono-mic-gain-low">
         <path name="speaker-mono-mic-common" />
-        <ctl name="DEC7 Volume" value="92" />
+        <ctl name="DEC7 Volume" value="101" />
     </path>
 
     <path name="speaker-mono-mic-gain-mid">
         <path name="speaker-mono-mic-common" />
-        <ctl name="DEC7 Volume" value="105" />
+        <ctl name="DEC7 Volume" value="114" />
     </path>
 
     <path name="speaker-mono-mic-gain-high">
         <path name="speaker-mono-mic-common" />
-        <ctl name="DEC7 Volume" value="114" />
+        <ctl name="DEC7 Volume" value="123" />
     </path>
 
     <path name="speaker-protected">
@@ -2649,14 +2651,13 @@
     </path>
 
     <path name="handset">
-        <ctl name="COMP7 Switch" value="1" />
         <ctl name="SLIM RX0 MUX" value="AIF_MIX1_PB" />
         <ctl name="SLIM_0_RX Channels" value="One" />
-        <ctl name="RX INT7_1 MIX1 INP0" value="RX0" />
-        <ctl name="SpkrLeft COMP Switch" value="1" />
-        <ctl name="SpkrLeft BOOST Switch" value="1" />
-        <ctl name="SpkrLeft SWR DAC_Port Switch" value="1" />
-        <ctl name="EAR SPKR PA Gain" value="G_6_DB" />
+        <ctl name="RX INT0_1 MIX1 INP0" value="RX0" />
+        <ctl name="RX INT0 DEM MUX" value="CLSH_DSM_OUT" />
+        <ctl name="EAR PA Gain" value="G_6_DB" />
+        <ctl name="RX0 Digital Volume" value="84" />
+        <ctl name="Ear_Enable_States" value="Enable" />
     </path>
 
     <path name="handset-mic">
@@ -3066,26 +3067,26 @@
 
     <path name="camcorder-mic">
         <path name="camcorder-mic-common" />
-        <ctl name="DEC8 Volume" value="92" />
-        <ctl name="DEC7 Volume" value="92" />
+        <ctl name="DEC8 Volume" value="101" />
+        <ctl name="DEC7 Volume" value="83" />
     </path>
 
     <path name="camcorder-mic-gain-low">
         <path name="camcorder-mic-common" />
-        <ctl name="DEC8 Volume" value="92" />
-        <ctl name="DEC7 Volume" value="92" />
+        <ctl name="DEC8 Volume" value="101" />
+        <ctl name="DEC7 Volume" value="83" />
     </path>
 
     <path name="camcorder-mic-gain-mid">
         <path name="camcorder-mic-common" />
-        <ctl name="DEC8 Volume" value="105" />
-        <ctl name="DEC7 Volume" value="105" />
+        <ctl name="DEC8 Volume" value="114" />
+        <ctl name="DEC7 Volume" value="96" />
     </path>
 
     <path name="camcorder-mic-gain-high">
         <path name="camcorder-mic-common" />
-        <ctl name="DEC8 Volume" value="114" />
-        <ctl name="DEC7 Volume" value="114" />
+        <ctl name="DEC8 Volume" value="123" />
+        <ctl name="DEC7 Volume" value="105" />
     </path>
 
     <path name="hdmi-tx">
