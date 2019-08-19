@@ -1,7 +1,7 @@
-# system prop for poplar
+# system prop for maple
 
 ### USB
-ro.vendor.usb.pid_suffix=1F3
+ro.vendor.usb.pid_suffix=1F1
 
 ### RADIO
 # This will be set by loading
@@ -24,5 +24,5 @@ ro.semc.product.model=G8341
 ro.semc.ms_type_id=PM-1054-BV
 ro.semc.version.fs=GENERIC
 ro.semc.version.fs_revision=47.2.A.11.228
-ro.semc.product.name=Xperia XZ1
-ro.semc.product.device=G83
+ro.semc.product.name=Xperia XZ Premium
+ro.semc.product.device=G81
