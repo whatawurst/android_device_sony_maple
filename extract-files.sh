@@ -67,11 +67,20 @@ TWRP_QSEECOMD="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/recovery/ro
 
 sed -i "s|/system/bin/linker64|/sbin/linker64\x0\x0\x0\x0\x0\x0|g" "$TWRP_QSEECOMD"
 
+DEVICE_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/
+
+# Use v28 libprotobuf
+# Using patchelf on them doesn't work for some reason
+sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "$DEVICE_ROOT"/vendor/lib/libwvhidl.so
+sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "$DEVICE_ROOT"/vendor/lib64/libwvhidl.so 
+sed -i "s|libprotobuf-cpp-full.so|libpootobuf-cpp-full.so|g" "$DEVICE_ROOT"/vendor/lib/libsettings.so 
+sed -i "s|libprotobuf-cpp-full.so|libpootobuf-cpp-full.so|g" "$DEVICE_ROOT"/vendor/lib64/libsettings.so 
+sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "$DEVICE_ROOT"/vendor/lib/mediadrm/libwvdrmengine.so 
+sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "$DEVICE_ROOT"/vendor/lib64/mediadrm/libwvdrmengine.so 
+
 #
 # Fix product path
 #
-
-DEVICE_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary/
 
 function fix_product_path () {
     sed -i \
