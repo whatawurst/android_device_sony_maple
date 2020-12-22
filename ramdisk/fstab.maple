@@ -3,7 +3,6 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 /dev/block/bootdevice/by-name/userdata     /data        ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,discard,errors=panic wait,check,formattable,encryptable=footer
-/dev/block/bootdevice/by-name/oem          /oem-modem   ext4    ro,barrier=1                                                  wait
 /dev/block/bootdevice/by-name/cache        /cache       ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic wait,check,formattable
 
 /dev/block/bootdevice/by-name/misc         /misc        emmc         defaults                                                      defaults
