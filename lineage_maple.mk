@@ -6,7 +6,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/sony/maple/device.mk)
 
 # Product API level
-$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n.mk)
 
 ### BOOTANIMATION
 # vendor/lineage/config/common_full_phone.mk

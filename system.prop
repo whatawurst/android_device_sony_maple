@@ -10,7 +10,7 @@ ro.vendor.usb.pid_suffix=1F1
 
 ### API
 # First released API level
-ro.product.first_api_level=26
+ro.product.first_api_level=25
 
 ##### Add values MiscTA #####
 # /system/etc/prop.default
