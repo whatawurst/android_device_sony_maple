@@ -80,69 +80,47 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <carrier_config mcc="204" mnc="02" imsi="^20402?([0]([2-3]|[8])|[1]([0-1]|[3-8])).*">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
-    <carrier_config mcc="204" mnc="08">
+    <carrier_config mcc="204" mnc="16" spn="T-Mobile  NL">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
     <!-- Carrier-specific T-Mobile NL -->
-    <carrier_config mcc="204" mnc="16" spn="T-Mobile  NL">
-        <boolean name="carrier_volte_available_bool" value="true" />
-    </carrier_config>
     <carrier_config mcc="204" mnc="20" spn="T-Mobile  NL">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
     <!-- Carrier-specific customized BLX -->
-    <carrier_config mcc="204" mnc="69">
-        <boolean name="carrier_volte_available_bool" value="true" />
-    </carrier_config>
-
-    <!-- Carrier-specific Proximus (Vfe) BE -->
     <carrier_config mcc="206" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
-    <!-- Carrier-specific Orange MCV FR-ES-PL-SK-RO -->
-    <carrier_config mcc="208" mnc="01" gid1="FF" spn="Orange F">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-    </carrier_config>
-    <carrier_config mcc="208" mnc="01" spn="Orange F">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-    </carrier_config>
-
-    <!-- Carrier-specific Altice FR-PT -->
+    <!-- Carrier-specific customized FR -->
     <carrier_config mcc="208" mnc="10">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
-
-    <!-- Carrier-specific customized FR -->
     <carrier_config mcc="208" mnc="20" spn="Bouygues Telecom">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
-    <!-- Carrier-specific Vodafone ES -->
+    <!-- Carrier-specific customized IBE -->
     <carrier_config mcc="214" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
-
-    <!-- Carrier-specific Orange MCV FR-ES-PL-SK-RO -->
     <carrier_config mcc="214" mnc="03" imsi="^21403[^5][0-9]*">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
+
+    <!-- Carrier-specific Orange MCV FR-ES-PL-SK-RO -->
     <carrier_config mcc="214" mnc="03" spn="Orange">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
 
-    <!-- Carrier-specific TIM IT -->
+    <!-- Carrier-specific customized IT -->
     <carrier_config mcc="222" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
@@ -152,30 +130,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
-    <!-- Carrier-specific Swisscom CH -->
+    <!-- Carrier-specific customized CH -->
     <carrier_config mcc="228" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
-    </carrier_config>
-
-    <!-- Carrier-specific customized CH -->
-    <carrier_config mcc="228" mnc="02">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="1" />
-    </carrier_config>
-    <carrier_config mcc="228" mnc="03">
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-    </carrier_config>
-
-    <!-- Carrier-specific Vodafone CZ -->
-    <carrier_config mcc="230" mnc="03" spn="Vodafone CZ">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
     <!-- Carrier-specific Orange MCV FR-ES-PL-SK-RO -->
@@ -184,6 +144,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+    </carrier_config>
+
+    <!-- Carrier-specific T-Mobile SK -->
+    <carrier_config mcc="231" mnc="02">
+        <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
     <!-- Carrier-specific Mobilkom A1 AT -->
@@ -210,20 +175,30 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
-    <!-- Carrier-specific Vodafone UK -->
+    <!-- Carrier-specific customized UK -->
     <carrier_config mcc="234" mnc="15">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
-
-    <!-- Carrier-specific EE UK -->
+ 
+     <!-- Carrier-specific 3 UK -->
+     <carrier_config mcc="234" mnc="20">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
+        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
+     </carrier_config>
+ 
+     <!-- Carrier-specific customized UK -->
     <carrier_config mcc="234" mnc="30">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
+
+     <!-- Carrier-specific EE UK -->
     <carrier_config mcc="234" mnc="30" gid1="B3">
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
     </carrier_config>
@@ -231,19 +206,20 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
     </carrier_config>
 
-    <!-- Carrier-specific EE UK -->
+     <!-- Carrier-specific customized UK -->
     <carrier_config mcc="234" mnc="33">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
 
-    <!-- Carrier-specific customized UK -->
-    <carrier_config mcc="234" mnc="57">
+    <!-- Carrier-specific 3 UK -->
+     <carrier_config mcc="234" mnc="94">
+        <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
-    </carrier_config>
+     </carrier_config>
 
     <!-- Carrier-specific customized NOBA -->
     <carrier_config mcc="238" mnc="01">
@@ -262,12 +238,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
-    <carrier_config mcc="240" mnc="01" spn="Telia">
+    <carrier_config mcc="240" mnc="01" spn="halebop">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
-    <carrier_config mcc="240" mnc="01" spn="halebop">
+    <carrier_config mcc="240" mnc="01" spn="Telia">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
@@ -290,15 +266,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
     </carrier_config>
-
-    <!-- Carrier-specific customized UK -->
-    <carrier_config mcc="240" mnc="07" gid1="0C">
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
-    </carrier_config>
-
-    <!-- Carrier-specific customized NOBA -->
     <carrier_config mcc="240" mnc="07" imsi="^24007?(([0-5]|[7-9])|600).*">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
@@ -308,6 +275,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
     <carrier_config mcc="242" mnc="01">
+        <int name="maxMessageSize" value="2048000" />
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
@@ -372,6 +340,23 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
 
+    <!-- Carrier-specific Play PL -->
+    <carrier_config mcc="260" mnc="06">
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+    </carrier_config>
+    <carrier_config mcc="260" mnc="07">
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+    </carrier_config>
+    <carrier_config mcc="260" mnc="98">
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="2" />
+    </carrier_config>
+
     <!-- Carrier-specific customized DE -->
     <carrier_config mcc="262" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -379,8 +364,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
     </carrier_config>
-
-    <!-- Carrier-specific Telekom.de DE -->
     <carrier_config mcc="262" mnc="01" gid1="01">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -417,15 +400,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
     </carrier_config>
-
-    <!-- Carrier-specific Vodafone DE -->
     <carrier_config mcc="262" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
-
-    <!-- Carrier-specific customized DE -->
     <carrier_config mcc="262" mnc="03">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
@@ -436,24 +415,20 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
     </carrier_config>
-    <carrier_config mcc="262" mnc="77">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-    </carrier_config>
 
     <!-- Carrier-specific Vodafone DE -->
     <carrier_config mcc="262" mnc="09">
         <boolean name="carrier_volte_available_bool" value="true" />
     </carrier_config>
 
-    <!-- Carrier-specific customized BLX -->
-    <carrier_config mcc="270" mnc="01">
+    <!-- Carrier-specific customized DE -->
+    <carrier_config mcc="262" mnc="77">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
     </carrier_config>
 
-    <!-- Carrier-specific customized Meteor IE -->
+    <!-- Carrier-specific Meteor IE -->
     <carrier_config mcc="272" mnc="03">
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
@@ -463,15 +438,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     <!-- Carrier-specific customized TR -->
     <carrier_config mcc="286" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="1" />
-        <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
     </carrier_config>
     <carrier_config mcc="286" mnc="02">
         <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="1" />
-        <int name="carrier_default_wfc_ims_roaming_mode_int" value="1" />
     </carrier_config>
     <carrier_config mcc="286" mnc="03">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -502,6 +471,46 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <boolean name="carrier_vt_available_bool" value="true" />
     </carrier_config>
 
+    <!-- Carrier-specific Telstra AU -->
+    <carrier_config mcc="505" mnc="01">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+
+    <!-- Carrier-specific customized AU -->
+    <carrier_config mcc="505" mnc="02">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <!-- Carrier-specific Optus AU -->
+    <carrier_config mcc="505" mnc="02" imsi="505029*">
+        <boolean name="carrier_volte_available_bool" value="true" />
+    </carrier_config>
+
+    <!-- Carrier-specific Vodafone AU -->
+    <carrier_config mcc="505" mnc="03">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="505" mnc="07">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+
+    <!-- Carrier-specific Telstra AU -->
+    <carrier_config mcc="505" mnc="11">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="505" mnc="71">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+    <carrier_config mcc="505" mnc="72">
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_vt_available_bool" value="true" />
+    </carrier_config>
+
     <!-- Carrier-specific Vodacom ZA -->
     <carrier_config mcc="655" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -510,11 +519,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
     </carrier_config>
 
     <!-- Carrier-specific customized ZA -->
-     <carrier_config mcc="655" mnc="02">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-    </carrier_config>
     <carrier_config mcc="655" mnc="07">
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
@@ -528,43 +532,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_mode_int" value="2" />
     </carrier_config>
 
-    <!-- Carrier-specific Movistar PE -->
-    <carrier_config mcc="716" mnc="06">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
-    </carrier_config>
-
-    <!-- Carrier-specific Movistar AR -->
-    <carrier_config mcc="722" mnc="070">
+    <!-- Carrier-specific Claro PE -->
+    <carrier_config mcc="716" mnc="20">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <boolean name="carrier_vt_available_bool" value="true" />
         <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
-    <!-- Carrier-specific Claro AR -->
-    <carrier_config mcc="722" mnc="310">
+    <!-- Carrier-specific Comcel 3GSM CO -->
+    <carrier_config mcc="732" mnc="101">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-    </carrier_config>
-    <carrier_config mcc="722" mnc="320">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-    </carrier_config>
-    <carrier_config mcc="722" mnc="330">
-        <boolean name="carrier_volte_available_bool" value="true" />
-        <boolean name="carrier_wfc_ims_available_bool" value="true" />
-        <int name="carrier_default_wfc_ims_mode_int" value="2" />
-    </carrier_config>
-
-    <!-- Carrier-specific Movistar CO -->
-    <carrier_config mcc="732" mnc="102">
-        <boolean name="carrier_volte_available_bool" value="true" />
-    </carrier_config>
-    <carrier_config mcc="732" mnc="123">
-        <boolean name="carrier_volte_available_bool" value="true" />
+        <int name="carrier_default_wfc_ims_mode_int" value="1" />
     </carrier_config>
 
 </carrier_config_list>
