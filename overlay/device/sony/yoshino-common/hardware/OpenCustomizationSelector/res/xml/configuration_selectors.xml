@@ -245,4 +245,61 @@
         <sim_config_id>S59.2</sim_config_id>
         <sim_config_id>S9105.1</sim_config_id>
     </configuration>
+    <configuration config_id="903">
+        <sim_config_id>S273.1</sim_config_id>
+    </configuration>
+    <configuration config_id="904">
+        <sim_config_id>S180.1</sim_config_id>
+    </configuration>
+    <configuration config_id="905">
+        <sim_config_id>S181.1</sim_config_id>
+    </configuration>
+    <configuration config_id="906">
+        <sim_config_id>S176.1</sim_config_id>
+    </configuration>
+    <configuration config_id="907">
+        <sim_config_id>S9902.1</sim_config_id>
+    </configuration>
+    <configuration config_id="908">
+        <sim_config_id>S228.1</sim_config_id>
+    </configuration>
+    <configuration config_id="910">
+        <sim_config_id>S206.1</sim_config_id>
+    </configuration>
+    <configuration config_id="911">
+        <sim_config_id>S23.1</sim_config_id>
+    </configuration>
+    <configuration config_id="912">
+        <sim_config_id>S21.2</sim_config_id>
+    </configuration>
+    <configuration config_id="913">
+        <sim_config_id>S8657.1</sim_config_id>
+    </configuration>
+    <configuration config_id="914">
+        <sim_config_id>S622.2</sim_config_id>
+        <sim_config_id>S622.3</sim_config_id>
+        <sim_config_id>S622.4</sim_config_id>
+    </configuration>
+    <configuration config_id="915">
+        <sim_config_id>S26.1</sim_config_id>
+    </configuration>
+    <configuration config_id="916">
+        <sim_config_id>S28.1</sim_config_id>
+    </configuration>
+    <configuration config_id="918">
+        <sim_config_id>S52.1</sim_config_id>
+    </configuration>
+    <configuration config_id="919">
+        <sim_config_id>S4508.1</sim_config_id>
+        <sim_config_id>S4508.2</sim_config_id>
+    </configuration>
+    <configuration config_id="920">
+        <sim_config_id>S412.1</sim_config_id>
+    </configuration>
+    <configuration config_id="924">
+        <sim_config_id>S401.1</sim_config_id>
+    </configuration>
+    <configuration config_id="926">
+        <sim_config_id>S403.1</sim_config_id>
+    </configuration>
 </configurations>
