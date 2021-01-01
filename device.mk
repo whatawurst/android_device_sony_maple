@@ -3,12 +3,9 @@ $(call inherit-product, device/sony/yoshino-common/platform.mk)
 ### PROPRIETARY VENDOR FILES
 $(call inherit-product, vendor/sony/maple/maple-vendor.mk)
 
-ifeq ($(WITH_FDROID),true)
-$(call inherit-product, vendor/fdroid/fdroid-vendor.mk)
-endif
-
 ### DALVIK
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/omni/config/phone-xxhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, vendor/omni/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 DEVICE_PATH := device/sony/maple
 
@@ -23,18 +20,14 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(DEVICE_PATH)/overlay/packages/apps/CarrierConfig
 
 # Protobuf
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpootobuf-cpp-full.so \
-    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpootobuf-cpp-lite.so \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpootobuf-cpp-full.so \
-    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpootobuf-cpp-lite.so
+#PRODUCT_COPY_FILES += \
+#    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpootobuf-cpp-full.so \
+#    prebuilts/vndk/v28/arm64/arch-arm-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpootobuf-cpp-lite.so \
+#    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpootobuf-cpp-full.so \
+#    prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpootobuf-cpp-lite.so
 
-ifeq ($(WITH_TWRP),true)
-include $(DEVICE_PATH)/device/init.mk
-else # WITH_TWRP
 include $(DEVICE_PATH)/device/*.mk
 include $(DEVICE_PATH)/vendor_prop.mk
-endif # WITH_TWRP
 
 # Disable treble
 PRODUCT_FULL_TREBLE_OVERRIDE := false

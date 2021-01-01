@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_maple.mk
+    $(LOCAL_DIR)/omni_maple.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_maple-user \
