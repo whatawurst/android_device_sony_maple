@@ -36,3 +36,16 @@ vendor/lib64/libGPreqcancel.so:recovery/root/sbin/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so:recovery/root/sbin/libGPreqcancel_svc.so
 
 vendor/bin/qseecomd:recovery/root/sbin/qseecomd
+
+# RECOVERY_GATEKEEPER
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service:recovery/root/sbin/android.hardware.gatekeeper@1.0-service
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:recovery/root/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
+vendor/lib64/hw/gatekeeper.msm8998.so:recovery/root/vendor/lib64/hw/gatekeeper.msm8998.so
+
+# RECOVERY_KEYMASTER
+vendor/bin/hw/android.hardware.keymaster@3.0-service:recovery/root/sbin/android.hardware.keymaster@3.0-service
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:recovery/root/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so
+vendor/lib64/hw/keystore.msm8998.so:recovery/root/vendor/lib64/hw/keystore.msm8998.so
+vendor/lib64/libkeymasterdeviceutils.so:recovery/root/sbin/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so:recovery/root/sbin/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so:recovery/root/sbin/libkeymasterutils.so
