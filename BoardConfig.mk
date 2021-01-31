@@ -54,6 +54,7 @@ BOARD_IMS_CAMERA := true
 ### HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-### SYSTEM PROPS
+### PROPS
 # Add device-specific ones
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
