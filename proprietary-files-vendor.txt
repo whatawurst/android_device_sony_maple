@@ -1324,6 +1324,7 @@ vendor/bin/hw/vendor.somc.hardware.wifi@2.0-service
 vendor/etc/init/vendor.somc.hardware.wifi@2.0-service.rc
 vendor/etc/wifi/bdwlan.bin
 vendor/etc/wifi/fstman.ini
+vendor/etc/wifi/p2p_supplicant_overlay.conf
 
 # WIFIDISPLAY - from mata - QP1A.190711.148
 vendor/bin/wifidisplayhalservice|845b5e359d006ecb3a4c3bd72841be0ff081754d
