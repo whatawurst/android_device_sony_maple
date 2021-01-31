@@ -1224,6 +1224,9 @@ vendor/lib64/libsuntory.so
 vendor/bin/sct_service
 vendor/etc/init/sct_service.rc
 
+# SEC_CONFIG
+vendor/etc/sec_config
+
 # SENSORS
 vendor/bin/sensors.qti
 vendor/etc/sensors/hals.conf
