@@ -1,3 +1,6 @@
+# AUDIO
+etc/audio_policy.conf
+
 # AUDIO_SOUNDTRIGGER
 lib/vendor.qti.voiceprint@1.0.so
 lib64/vendor.qti.voiceprint@1.0.so
