@@ -29,11 +29,7 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpootobuf-cpp-full.so \
     prebuilts/vndk/v28/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-lite.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpootobuf-cpp-lite.so
 
-ifeq ($(WITH_TWRP),true)
-include $(DEVICE_PATH)/device/init.mk
-else # WITH_TWRP
 include $(DEVICE_PATH)/device/*.mk
-endif # WITH_TWRP
 
 # Disable treble
 PRODUCT_FULL_TREBLE_OVERRIDE := false
