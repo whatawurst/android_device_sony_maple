@@ -593,18 +593,6 @@ lib64/libsensor1.so
 lib64/libsensor_reg.so
 lib64/libsensor_test.so
 
-# SSR
-bin/bt_ssr_dumper
-bin/ssr_dumper
-etc/ssrdumper_config.xml
-etc/ssrdumper_target.xml
-lib/libdumpframework.so
-lib/libsnappy.so
-lib/libtlcore.so
-lib64/libdumpframework.so
-lib64/libsnappy.so
-lib64/libtlcore.so
-
 # THERMAL
 lib64/vendor.semc.hardware.thermal@1.0.so
 
