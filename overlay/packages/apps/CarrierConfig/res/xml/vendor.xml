@@ -438,7 +438,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <int name="carrier_default_wfc_ims_roaming_mode_int" value="2" />
     </carrier_config>
 
-     <!-- Carrier-specific customized TR -->
+    <!-- Carrier-specific customized TR -->
     <carrier_config mcc="286" mnc="01">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
