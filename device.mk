@@ -33,7 +33,8 @@ PRODUCT_COPY_FILES += \
 
 include $(DEVICE_PATH)/device/*.mk
 
-# Disable treble
+# Disable full treble
 PRODUCT_FULL_TREBLE_OVERRIDE := false
-
+# Enable some treble aspects
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+PRODUCT_SEPOLICY_SPLIT_OVERRIDE := true
