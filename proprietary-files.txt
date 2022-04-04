@@ -184,15 +184,15 @@ etc/firmware/ufs/01AD-483238553734333031414D5220202020-D003.bin|516309bb7438524b
 etc/firmware/ufs/01CE-4B4C554347344A3145442D4230433120-0200.bin|e7f38785022e28539eb496865e10184faa3ab28a
 
 # FINGERPRINT
-etc/firmware/tzfingerprint.b00
-etc/firmware/tzfingerprint.b01
-etc/firmware/tzfingerprint.b02
-etc/firmware/tzfingerprint.b03
-etc/firmware/tzfingerprint.b04
-etc/firmware/tzfingerprint.b05
-etc/firmware/tzfingerprint.b06
-etc/firmware/tzfingerprint.b07
-etc/firmware/tzfingerprint.mdt
+etc/firmware/tzfingerprint.b00:vendor/firmware/tzfingerprint.b00
+etc/firmware/tzfingerprint.b01:vendor/firmware/tzfingerprint.b01
+etc/firmware/tzfingerprint.b02:vendor/firmware/tzfingerprint.b02
+etc/firmware/tzfingerprint.b03:vendor/firmware/tzfingerprint.b03
+etc/firmware/tzfingerprint.b04:vendor/firmware/tzfingerprint.b04
+etc/firmware/tzfingerprint.b05:vendor/firmware/tzfingerprint.b05
+etc/firmware/tzfingerprint.b06:vendor/firmware/tzfingerprint.b06
+etc/firmware/tzfingerprint.b07:vendor/firmware/tzfingerprint.b07
+etc/firmware/tzfingerprint.mdt:vendor/firmware/tzfingerprint.mdt
 
 # FINGERPRINT_EXTENSION
 etc/permissions/com.fingerprints.extension.xml

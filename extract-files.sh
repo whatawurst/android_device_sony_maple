@@ -71,6 +71,10 @@ sed -i "s|libprotobuf-cpp-full.so|libpootobuf-cpp-full.so|g" "${DEVICE_ROOT}"/ve
 sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "${DEVICE_ROOT}"/vendor/lib/mediadrm/libwvdrmengine.so 
 sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "${DEVICE_ROOT}"/vendor/lib64/mediadrm/libwvdrmengine.so 
 
+# Move fpc firmware to vendor
+sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${DEVICE_ROOT}"/vendor/lib/lib_fpc_tac_shared.so
+sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${DEVICE_ROOT}"/vendor/lib64/lib_fpc_tac_shared.so
+
 #
 # Fix product path
 #
