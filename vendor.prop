@@ -1,2 +1,5 @@
+# Bluetooth
+bluetooth.device.default_name=Xperia XZ Premium
+
 # Radio
 persist.vendor.radio.block_allow_data=1
