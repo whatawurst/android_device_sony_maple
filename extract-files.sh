@@ -62,17 +62,10 @@ extract "${MY_DIR}/proprietary-files-vendor.txt" "${SRC}" "${KANG}" --section "$
 
 DEVICE_ROOT="${ANDROID_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary/
 
-# Use v28 libprotobuf
-# Using patchelf on them doesn't work for some reason
-sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "${DEVICE_ROOT}"/vendor/lib/libwvhidl.so
-sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "${DEVICE_ROOT}"/vendor/lib64/libwvhidl.so 
-sed -i "s|libprotobuf-cpp-full.so|libpootobuf-cpp-full.so|g" "${DEVICE_ROOT}"/vendor/lib/libsettings.so 
-sed -i "s|libprotobuf-cpp-full.so|libpootobuf-cpp-full.so|g" "${DEVICE_ROOT}"/vendor/lib64/libsettings.so 
-sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "${DEVICE_ROOT}"/vendor/lib/mediadrm/libwvdrmengine.so 
-sed -i "s|libprotobuf-cpp-lite.so|libpootobuf-cpp-lite.so|g" "${DEVICE_ROOT}"/vendor/lib64/mediadrm/libwvdrmengine.so 
-
+#
 # Move fpc firmware to vendor
-sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${DEVICE_ROOT}"/vendor/lib/lib_fpc_tac_shared.so
+#
+
 sed -i "s|/system/etc/firmware|/vendor/firmware\x0\x0\x0\x0|g" "${DEVICE_ROOT}"/vendor/lib64/lib_fpc_tac_shared.so
 
 #
