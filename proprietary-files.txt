@@ -2,8 +2,11 @@
 etc/audio_policy.conf
 
 # AUDIO_SOUNDTRIGGER
-lib/vendor.qti.voiceprint@1.0.so
-lib64/vendor.qti.voiceprint@1.0.so
+lib/vendor.qti.voiceprint@1.0.so:vendor/lib/vendor.qti.voiceprint@1.0.so
+
+# BLUETOOTH
+lib/com.qualcomm.qti.bluetooth_audio@1.0.so
+lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 
 # Bluetooth (aptX) - from crosshatch - QP1A.190711.020
 lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
@@ -20,6 +23,14 @@ lib/vendor.somc.hardware.camera.cacao@3.0.so
 lib/vendor.somc.hardware.camera.cacao@3.1.so
 lib/vendor.somc.hardware.camera.device@1.0.so
 lib/vendor.somc.hardware.camera.provider@1.0.so
+
+# CAMERA - add a copy to /vendor
+lib/vendor.somc.hardware.camera.cacao@1.0.so:vendor/lib/vendor.somc.hardware.camera.cacao@1.0.so
+lib/vendor.somc.hardware.camera.cacao@2.0.so:vendor/lib/vendor.somc.hardware.camera.cacao@2.0.so
+lib/vendor.somc.hardware.camera.cacao@3.0.so:vendor/lib/vendor.somc.hardware.camera.cacao@3.0.so
+lib/vendor.somc.hardware.camera.cacao@3.1.so:vendor/lib/vendor.somc.hardware.camera.cacao@3.1.so
+lib/vendor.somc.hardware.camera.device@1.0.so:vendor/lib/vendor.somc.hardware.camera.device@1.0.so
+lib/vendor.somc.hardware.camera.provider@1.0.so:vendor/lib/vendor.somc.hardware.camera.provider@1.0.so
 
 # CAMERA_POSTPROCESSING
 lib/libjni_imageutil.so
@@ -81,6 +92,12 @@ lib64/vendor.display.postproc@1.0.so
 lib64/libsys-utils-system.so
 lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
+# DISPLAY - add a copy to /vendor
+lib64/vendor.display.color@1.0.so:vendor/lib64/vendor.display.color@1.0.so
+lib64/vendor.display.color@1.1.so:vendor/lib64/vendor.display.color@1.1.so
+lib64/vendor.display.postproc@1.0.so:vendor/lib64/vendor.display.postproc@1.0.so
+lib64/vendor.qti.hardware.qdutils_disp@1.0.so:vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
+
 # DPM - from cheeseburger - QKQ1.191014.012
 etc/customization/settings/defaults/dpm.conf:etc/dpm.conf
 framework/tcmclient.jar|6ef9ca98f67c144fc8ae941bb3a47f99cbd93098
@@ -110,41 +127,41 @@ lib64/libsdsprpc_system.so
 lib64/libseemore.so
 
 # DRM
-etc/firmware/tzwidevine.b00
-etc/firmware/tzwidevine.b01
-etc/firmware/tzwidevine.b02
-etc/firmware/tzwidevine.b03
-etc/firmware/tzwidevine.b04
-etc/firmware/tzwidevine.b05
-etc/firmware/tzwidevine.b06
-etc/firmware/tzwidevine.b07
-etc/firmware/tzwidevine.mdt
-etc/firmware/tzwvcpybuf.b00
-etc/firmware/tzwvcpybuf.b01
-etc/firmware/tzwvcpybuf.b02
-etc/firmware/tzwvcpybuf.b03
-etc/firmware/tzwvcpybuf.b04
-etc/firmware/tzwvcpybuf.b05
-etc/firmware/tzwvcpybuf.b06
-etc/firmware/tzwvcpybuf.b07
-etc/firmware/tzwvcpybuf.mdt
+etc/firmware/tzwidevine.b00:vendor/firmware/tzwidevine.b00
+etc/firmware/tzwidevine.b01:vendor/firmware/tzwidevine.b01
+etc/firmware/tzwidevine.b02:vendor/firmware/tzwidevine.b02
+etc/firmware/tzwidevine.b03:vendor/firmware/tzwidevine.b03
+etc/firmware/tzwidevine.b04:vendor/firmware/tzwidevine.b04
+etc/firmware/tzwidevine.b05:vendor/firmware/tzwidevine.b05
+etc/firmware/tzwidevine.b06:vendor/firmware/tzwidevine.b06
+etc/firmware/tzwidevine.b07:vendor/firmware/tzwidevine.b07
+etc/firmware/tzwidevine.mdt:vendor/firmware/tzwidevine.mdt
+etc/firmware/tzwvcpybuf.b00:vendor/firmware/tzwvcpybuf.b00
+etc/firmware/tzwvcpybuf.b01:vendor/firmware/tzwvcpybuf.b01
+etc/firmware/tzwvcpybuf.b02:vendor/firmware/tzwvcpybuf.b02
+etc/firmware/tzwvcpybuf.b03:vendor/firmware/tzwvcpybuf.b03
+etc/firmware/tzwvcpybuf.b04:vendor/firmware/tzwvcpybuf.b04
+etc/firmware/tzwvcpybuf.b05:vendor/firmware/tzwvcpybuf.b05
+etc/firmware/tzwvcpybuf.b06:vendor/firmware/tzwvcpybuf.b06
+etc/firmware/tzwvcpybuf.b07:vendor/firmware/tzwvcpybuf.b07
+etc/firmware/tzwvcpybuf.mdt:vendor/firmware/tzwvcpybuf.mdt
 
 # DRM_HDCP
-etc/firmware/tzhdcp.b00
-etc/firmware/tzhdcp.b01
-etc/firmware/tzhdcp.b02
-etc/firmware/tzhdcp.b03
-etc/firmware/tzhdcp.b04
-etc/firmware/tzhdcp.b05
-etc/firmware/tzhdcp.b06
-etc/firmware/tzhdcp.b07
-etc/firmware/tzhdcp.mdt
-lib/libhdcprx_module.so
-lib/libhdcptx_module.so
-lib/libstagefright_hdcp.so
-lib64/libhdcprx_module.so
-lib64/libhdcptx_module.so
-lib64/libstagefright_hdcp.so
+etc/firmware/tzhdcp.b00:vendor/firmware/tzhdcp.b00
+etc/firmware/tzhdcp.b01:vendor/firmware/tzhdcp.b01
+etc/firmware/tzhdcp.b02:vendor/firmware/tzhdcp.b02
+etc/firmware/tzhdcp.b03:vendor/firmware/tzhdcp.b03
+etc/firmware/tzhdcp.b04:vendor/firmware/tzhdcp.b04
+etc/firmware/tzhdcp.b05:vendor/firmware/tzhdcp.b05
+etc/firmware/tzhdcp.b06:vendor/firmware/tzhdcp.b06
+etc/firmware/tzhdcp.b07:vendor/firmware/tzhdcp.b07
+etc/firmware/tzhdcp.mdt:vendor/firmware/tzhdcp.mdt
+lib/libhdcprx_module.so:vendor/lib/libhdcprx_module.so
+lib/libhdcptx_module.so:vendor/lib/libhdcptx_module.so
+lib/libstagefright_hdcp.so:vendor/lib/libstagefright_hdcp.so
+lib64/libhdcprx_module.so:vendor/lib64/libhdcprx_module.so
+lib64/libhdcptx_module.so:vendor/lib64/libhdcptx_module.so
+lib64/libstagefright_hdcp.so:vendor/lib64/libstagefright_hdcp.so
 
 # FFU
 etc/firmware/ufs/01AD-483238553734333031414D5220202020-D003.bin|516309bb7438524b2e4555cc3dcd452d94ea1b92
@@ -164,7 +181,7 @@ etc/firmware/tzfingerprint.mdt:vendor/firmware/tzfingerprint.mdt
 # FINGERPRINT_EXTENSION
 etc/permissions/com.fingerprints.extension.xml
 -framework/com.fingerprints.extension.jar
-lib64/com.fingerprints.extension@1.0.so
+lib64/com.fingerprints.extension@1.0.so:vendor/lib64/com.fingerprints.extension@1.0.so
 
 # FIRMWARE
 etc/firmware/cmnlib64.b00
@@ -229,6 +246,26 @@ etc/firmware/tztpm.b06
 etc/firmware/tztpm.b07
 etc/firmware/tztpm.mdt
 
+# FIRMWARE - add a copy to /vendor
+etc/firmware/tzsuntory.b00:vendor/etc/firmware/tzsuntory.b00
+etc/firmware/tzsuntory.b01:vendor/etc/firmware/tzsuntory.b01
+etc/firmware/tzsuntory.b02:vendor/etc/firmware/tzsuntory.b02
+etc/firmware/tzsuntory.b03:vendor/etc/firmware/tzsuntory.b03
+etc/firmware/tzsuntory.b04:vendor/etc/firmware/tzsuntory.b04
+etc/firmware/tzsuntory.b05:vendor/etc/firmware/tzsuntory.b05
+etc/firmware/tzsuntory.b06:vendor/etc/firmware/tzsuntory.b06
+etc/firmware/tzsuntory.b07:vendor/etc/firmware/tzsuntory.b07
+etc/firmware/tzsuntory.mdt:vendor/etc/firmware/tzsuntory.mdt
+etc/firmware/tztpm.b00:vendor/etc/firmware/tztpm.b00
+etc/firmware/tztpm.b01:vendor/etc/firmware/tztpm.b01
+etc/firmware/tztpm.b02:vendor/etc/firmware/tztpm.b02
+etc/firmware/tztpm.b03:vendor/etc/firmware/tztpm.b03
+etc/firmware/tztpm.b04:vendor/etc/firmware/tztpm.b04
+etc/firmware/tztpm.b05:vendor/etc/firmware/tztpm.b05
+etc/firmware/tztpm.b06:vendor/etc/firmware/tztpm.b06
+etc/firmware/tztpm.b07:vendor/etc/firmware/tztpm.b07
+etc/firmware/tztpm.mdt:vendor/etc/firmware/tztpm.mdt
+
 # FRAMEWORK_DEPENDENCIES
 etc/permissions/com.sonymobile.getmore.api.xml
 framework/com.sonymobile.getmore.api.jar
@@ -240,6 +277,10 @@ lib64/libOpenCL_system.so
 # LIGHT
 lib/vendor.semc.hardware.light@1.0.so
 lib64/vendor.semc.hardware.light@1.0.so
+
+# LIGHT - add a copy to /vendor
+lib/vendor.semc.hardware.light@1.0.so:vendor/lib/vendor.semc.hardware.light@1.0.so
+lib64/vendor.semc.hardware.light@1.0.so:vendor/lib64/vendor.semc.hardware.light@1.0.so
 
 # MODEM
 bin/sony-modem-switcher
@@ -386,17 +427,6 @@ etc/customization/modem/amss_fsg_maple_vodafone_uk_tar.mbn
 etc/customization/modem/amss_fsg_maple_vodafone_uk_volte_vowifi_tar.mbn
 etc/customization/modem/amss_fsg_maple_wind_canada_tar.mbn
 
-# LOCATION
-etc/permissions/com.qti.location.sdk.xml
-etc/permissions/com.qualcomm.location.xml
-etc/permissions/izat.xt.srv.xml
-framework/com.qti.location.sdk.jar
-framework/izat.xt.srv.jar
-lib/liblocationservice_jni.so
-lib/libxt_native.so
-lib64/liblocationservice_jni.so
-lib64/libxt_native.so
-
 # MEDIA
 lib/vendor.qti.hardware.vpp@1.1.so
 lib64/vendor.qti.hardware.vpp@1.1.so
@@ -428,9 +458,17 @@ lib64/libGPTEE_system.so
 lib64/libsecureui_svcsock_system.so
 lib64/vendor.qti.hardware.tui_comm@1.0.so
 
+# QSEECOMD - add a copy to /vendor
+lib/vendor.qti.hardware.tui_comm@1.0.so:vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
+lib64/vendor.qti.hardware.tui_comm@1.0.so:vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
+
 # QTI_ANT
 lib/com.qualcomm.qti.ant@1.0.so
 lib64/com.qualcomm.qti.ant@1.0.so
+
+# QTI_ANT - add a copy to /vendor
+lib/com.qualcomm.qti.ant@1.0.so:vendor/lib/com.qualcomm.qti.ant@1.0.so
+lib64/com.qualcomm.qti.ant@1.0.so:vendor/lib64/com.qualcomm.qti.ant@1.0.so
 
 # QTI_QMI
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
@@ -450,8 +488,14 @@ lib64/libFidoCryptoJNI.so
 lib64/libGPQTEEC_system.so
 lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
+# QTI_DRM - add a copy to /vendor
+lib64/vendor.qti.hardware.qteeconnector@1.0.so:vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
+
 # QTI_ESEPOWERMANAGER
 lib64/vendor.qti.esepowermanager@1.0.so
+
+# QTI_ESEPOWERMANAGER - add a copy to /vendor
+lib64/vendor.qti.esepowermanager@1.0.so:vendor/lib64/vendor.qti.esepowermanager@1.0.so
 
 # QTI_IMS
 -product/app/uceShimService/uceShimService.apk|b50d1b50d15d6eaa9f5145e02e82efe4d08b9a9b
@@ -488,9 +532,22 @@ lib64/vendor.qti.hardware.radio.ims@1.0.so:product/lib64/vendor.qti.hardware.rad
 lib64/vendor.qti.hardware.radio.ims@1.1.so:product/lib64/vendor.qti.hardware.radio.ims@1.1.so
 lib64/vendor.qti.hardware.radio.ims@1.2.so:product/lib64/vendor.qti.hardware.radio.ims@1.2.so
 lib64/vendor.qti.hardware.radio.ims@1.3.so:product/lib64/vendor.qti.hardware.radio.ims@1.3.so
+lib64/vendor.qti.hardware.radio.ims@1.4.so:product/lib64/vendor.qti.hardware.radio.ims@1.4.so
 lib64/vendor.qti.ims.callinfo@1.0.so:product/lib64/vendor.qti.ims.callinfo@1.0.so
 lib64/vendor.qti.imsrtpservice@1.0.so:product/lib64/vendor.qti.imsrtpservice@1.0.so
 -priv-app/ims/ims.apk:product/priv-app/ims/ims.apk
+
+# QTI_IMS - add a copy to /vendor
+lib64/com.qualcomm.qti.imscmservice@1.0.so:vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
+lib64/com.qualcomm.qti.imscmservice@2.0.so:vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so
+lib64/com.qualcomm.qti.imscmservice@2.1.so:vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
+lib64/com.qualcomm.qti.uceservice@2.0.so:vendor/lib64/com.qualcomm.qti.uceservice@2.0.so
+lib64/vendor.qti.hardware.radio.ims@1.0.so:vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so
+lib64/vendor.qti.hardware.radio.ims@1.1.so:vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so
+lib64/vendor.qti.hardware.radio.ims@1.2.so:vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so
+lib64/vendor.qti.hardware.radio.ims@1.3.so:vendor/lib64/vendor.qti.hardware.radio.ims@1.3.so
+lib64/vendor.qti.hardware.radio.ims@1.4.so:vendor/lib64/vendor.qti.hardware.radio.ims@1.4.so
+lib64/vendor.qti.ims.callinfo@1.0.so:vendor/lib64/vendor.qti.ims.callinfo@1.0.so
 
 # QTI_QTEECONNECTOR
 lib64/vendor.qti.hardware.qteeconnector@1.0.so
@@ -501,19 +558,34 @@ lib64/vendor.qti.hardware.radio.am@1.0.so
 lib64/vendor.qti.hardware.radio.lpa@1.0.so
 lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
 lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
+lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
 lib64/vendor.qti.hardware.radio.uim@1.0.so
 lib64/vendor.qti.hardware.radio.uim@1.1.so
 lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 
+# QTI_RADIO - add a copy to /vendor
+lib64/vendor.qti.hardware.fm@1.0.so:vendor/lib64/vendor.qti.hardware.fm@1.0.so
+lib64/vendor.qti.hardware.radio.am@1.0.so:vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
+lib64/vendor.qti.hardware.radio.lpa@1.0.so:vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so
+lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so
+lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so
+lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so
+lib64/vendor.qti.hardware.radio.uim@1.0.so:vendor/lib64/vendor.qti.hardware.radio.uim@1.0.so
+lib64/vendor.qti.hardware.radio.uim@1.1.so:vendor/lib64/vendor.qti.hardware.radio.uim@1.1.so
+lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
+lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
+
 # RADIO
-lib/vendor.somc.hardware.radio@1.0.so
-lib64/vendor.somc.hardware.radio@1.0.so
-lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
+lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # SEMC_IDD
 lib/vendor.semc.system.idd@1.0.so
 lib64/vendor.semc.system.idd@1.0.so
+
+# SEMC_IDD - add a copy to /vendor
+lib/vendor.semc.system.idd@1.0.so:vendor/lib/vendor.semc.system.idd@1.0.so
+lib64/vendor.semc.system.idd@1.0.so:vendor/lib64/vendor.semc.system.idd@1.0.so
 
 # SEMC_RIL
 etc/permissions/com.sonyericsson.android.semcrilextension.xml
@@ -521,6 +593,9 @@ framework/semcrilextension.jar
 
 # SEMC_SECD
 lib64/vendor.somc.hardware.security.secd@1.0.so
+
+# SEMC_SECD - add a copy to /vendor
+lib64/vendor.somc.hardware.security.secd@1.0.so:vendor/lib64/vendor.somc.hardware.security.secd@1.0.so
 
 # SOMC_MISCTA - from tama - 52.1.A.3.49
 lib/vendor.somc.hardware.miscta@1.0.so|4a968e39a9ad5a6bedb36a61f12f3e4a649745c8
@@ -534,7 +609,7 @@ lib64/libsensor_reg.so
 lib64/libsensor_test.so
 
 # THERMAL
-lib64/vendor.semc.hardware.thermal@1.0.so
+lib64/vendor.semc.hardware.thermal@1.0.so:vendor/lib64/vendor.semc.hardware.thermal@1.0.so
 
 # TOUCH
 somc/touch/images/big_touch.png:vendor/sony/touch/images/big_touch.png
@@ -550,5 +625,5 @@ bin/updatemiscta
 etc/init/updatemiscta.rc
 
 # WIFI
-lib64/vendor.somc.hardware.wifi.supplicant@2.0.so
-lib64/vendor.somc.hardware.wifi@2.0.so
+lib64/vendor.somc.hardware.wifi.supplicant@2.0.so:vendor/lib64/vendor.somc.hardware.wifi.supplicant@2.0.so
+lib64/vendor.somc.hardware.wifi@2.0.so:vendor/lib64/vendor.somc.hardware.wifi@2.0.so

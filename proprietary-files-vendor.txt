@@ -863,11 +863,10 @@ vendor/etc/init/vendor.qti.esepowermanager@1.0-service.rc
 vendor/etc/powerhint.xml
 vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so
 
-# Gatekeeper / Keystore
-vendor/lib/hw/keystore.msm8998.so
-vendor/lib64/hw/keystore.msm8998.so
-vendor/lib/hw/gatekeeper.msm8998.so
-vendor/lib64/hw/gatekeeper.msm8998.so
+# QTI_GATEKEEPER - from poplar 47.2.A.11.228
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti|119385ebd0a25b9bf20ce70375a62d806f11d2f1
+vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc|1b8d5f58fe0a57906acf72b862c16a2521daa97b
+vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so|171d4da1fbc36eb353b5e22be47376d568987904
 
 # QTI_GNSS - from cheeseburger - QKQ1.191014.012
 vendor/bin/hw/android.hardware.gnss@2.0-service-qti|3a5532a5a1a200fa73a962a31afd7551dffb1de4
@@ -926,6 +925,12 @@ vendor/lib64/vendor.qti.gnss@3.0-service.so|9c3d4aed495c873f2d0a911cb16d459d0067
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
+
+# QTI_KEYMASTER - from poplar 47.2.A.11.228
+vendor/bin/hw/android.hardware.keymaster@3.0-service-qti|85f2221137d88d2aeefa67d5d92c24defe0ff18d
+vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc|573b7392c8997008204081165cfe81a11080745d
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so|a0cfe7d6f190030a753fafce49030ade90f87b28
+vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so|1dd7f9214c91636bfb2600fcc84bf09bcf5eb1dc
 
 # QTI_PERF - from cheeseburger - QKQ1.191014.012
 vendor/bin/energy-awareness|468d5fc803ac4a97ee23f8908feaadd015f96f77
