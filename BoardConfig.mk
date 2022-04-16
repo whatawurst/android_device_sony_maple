@@ -33,17 +33,11 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
 # See also /proc/partitions on the device
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 7707033600
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 54587760640
-
-# Build vendor.img (size of oem partition)
-BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_VENDOR := vendor
+# size of oem partition
 BOARD_VENDORIMAGE_PARTITION_SIZE := 419430400
 
 ### DISPLAY
 TARGET_SCREEN_DENSITY := 410
-
-### HIDL
-BOARD_VNDK_VERSION := current
 
 ### PROPS
 # Add device-specific ones
