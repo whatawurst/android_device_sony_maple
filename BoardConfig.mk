@@ -32,8 +32,7 @@ BOARD_KERNEL_CMDLINE += androidboot.hardware=maple
 ### PARTITIONS
 # See also /proc/partitions on the device
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 7707033600
-# Reserve space for data encryption (54587760640-32768)
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 54587727872
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 54587760640
 
 # Build vendor.img (size of oem partition)
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
