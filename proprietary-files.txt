@@ -458,7 +458,6 @@ lib64/libsecureui_svcsock_system.so
 lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # QSEECOMD - add a copy to /vendor
-lib/vendor.qti.hardware.tui_comm@1.0.so:vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 lib64/vendor.qti.hardware.tui_comm@1.0.so:vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 
 # QTI_ANT
