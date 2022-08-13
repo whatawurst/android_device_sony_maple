@@ -37,7 +37,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/libcdsprpc.so
 vendor/lib64/libfastcrc.so
 vendor/lib64/libfastcvadsp_stub.so
-vendor/lib64/libfastcvopt.so
 vendor/lib64/libfastrpc_utf_stub.so
 vendor/lib64/libmdsprpc.so
 vendor/lib64/libseemore.so
@@ -585,7 +584,6 @@ vendor/lib64/libdpmqmihal.so|41eb89e66ba065c43a5eb79cd3c72cef0ee167aa
 # DRM
 vendor/bin/hw/android.hardware.drm@1.1-service.widevine
 vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
-vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libwvhidl.so
 vendor/lib/libwvtee.so
 vendor/lib64/mediadrm/libwvdrmengine.so
