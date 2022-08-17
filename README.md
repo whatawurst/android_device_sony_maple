@@ -30,6 +30,7 @@ How to build LineageOS
             <project name="whatawurst/android_device_sony_maple" path="device/sony/maple" remote="github" revision="lineage-19.1" />
 
             <!-- blobs for maple -->
+            <project name="whatawurst/android_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-19.1" />
             <project name="whatawurst/android_vendor_sony_maple" path="vendor/sony/maple" remote="github" revision="lineage-19.1" />
         </manifest>
 
