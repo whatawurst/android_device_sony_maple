@@ -295,7 +295,3 @@ somc/touch/images/splash.png:vendor/sony/touch/images/splash.png
 
 # UDATEMISCTA
 bin/updatemiscta
-
-# WIFI
-lib64/vendor.somc.hardware.wifi.supplicant@2.0.so:vendor/lib64/vendor.somc.hardware.wifi.supplicant@2.0.so
-lib64/vendor.somc.hardware.wifi@2.0.so:vendor/lib64/vendor.somc.hardware.wifi@2.0.so
