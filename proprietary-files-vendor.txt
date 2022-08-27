@@ -378,5 +378,4 @@ vendor/firmware/touch_module_id_0xd1.img
 vendor/lib64/libtpm.so
 
 # WIFI
-vendor/bin/hw/vendor.somc.hardware.wifi@2.0-service
 vendor/etc/wifi/bdwlan.bin
