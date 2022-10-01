@@ -15,4 +15,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_maple.mk
+    $(LOCAL_DIR)/twrp_maple.mk
+
+COMMON_LUNCH_CHOICES := \
+    twrp_maple-eng \
+    twrp_maple-userdebug
