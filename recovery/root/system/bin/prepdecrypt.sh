@@ -320,6 +320,9 @@ else
     fi
 fi
 
+# Maple has a separate recovery partition, but does require resetprop to run
+SETPATCH=true
+
 if [ "$sdkver" -ge 26 ]; then
 	if [ -z "$setprop_bin" ]; then
 		check_resetprop
@@ -345,7 +348,8 @@ if [ "$sdkver" -ge 26 ]; then
 			SAR=true
 			MNT_VENDOR=true
 			TEMPVEN=/v
-			venpath="/dev/block/bootdevice/by-name/vendor$suffix"
+			# We are mounging oem as vendor on maple to trebelize it
+			venpath="/dev/block/bootdevice/by-name/oem$suffix"
 
 			temp_mount "$TEMPVEN" "vendor" "$venpath"
 
