@@ -87,6 +87,9 @@ sed -i "s|/system/etc/firmware|/vendor/etc/firmware|g" "${DEVICE_ROOT}"/vendor/b
 sed -i "s|/system/etc/firmware|/vendor/etc/firmware|g" "${DEVICE_ROOT}"/vendor/lib64/libsuntory.so
 sed -i "s|/system/etc/firmware|/vendor/etc/firmware|g" "${DEVICE_ROOT}"/vendor/lib64/libtpm.so
 
+# Replace libstdc++.so with libstdc++_vendor.so
+"${PATCHELF}" --replace-needed "libstdc++.so" "libstdc++_vendor.so" "${DEVICE_ROOT}"/vendor/bin/qns
+
 #
 # Blobs fixup end
 #
